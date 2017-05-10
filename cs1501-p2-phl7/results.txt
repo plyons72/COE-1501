@@ -1,0 +1,249 @@
+all.tar - Original = 3,031,040 bytes
+ 	LZW.java
+		Compressed: 1,846,854 bytes
+		Ratio: 1.64
+	MyLZW.java (Do Nothing)
+	  Compressed: 1,792,841 bytes
+  	Ratio: 1.69
+	MyLZW.java (Reset)
+	  Compressed: 1,792,841 bytes
+	  Ratio: 1.69
+	MyLZW.java (Monitor)
+	  Compressed: 1,792,841 bytes
+	  Ratio: 1.69
+	Winzip
+	  Compressed: 973,149 bytes
+	  Ratio: 3.11
+
+assig2.doc - Original = 87,040 bytes
+	LZW.java
+		Compressed: 74574 bytes
+		Ratio: 1.17
+	MyLZW.java (Do Nothing)
+		Compressed: 40,043 bytes
+		Ratio: 2.17
+	MyLZW.java (Reset)
+		Compressed: 40,043 bytes
+		Ratio: 2.17
+	MyLZW.java (Monitor)
+		Compressed: 40,043 bytes
+		Ratio: 2.17
+	Winzip
+		Compressed: 22,631 bytes
+		Ratio: 3.85
+
+
+bmps.tar - Original = 1,105,920 bytes
+	LZW.java
+		Compressed: 925,079 bytes
+		Ratio: 1.20
+	MyLZW.java (Do Nothing)
+		Compressed: 80,917 bytes
+		Ratio: 13.67
+	MyLZW.java (Reset)
+		Compressed: 80,917 bytes
+		Ratio: 13.67
+	MyLZW.java (Monitor)
+		Compressed: 80,917 bytes
+		Ratio: 13.67
+	Winzip
+		Compressed: 62,776 bytes
+		Ratio: 17.62
+
+
+code2.txt - Original = 52,600 bytes
+	LZW.java
+		Compressed: 23,213 bytes
+		Ratio: 2.27
+	MyLZW.java (Do Nothing)
+		Compressed: 19,998 bytes
+		Ratio: 2.63
+	MyLZW.java (Reset)
+		Compressed: 19,998 bytes
+		Ratio: 2.63
+	MyLZW.java (Monitor)
+		Compressed: 19,998 bytes
+		Ratio: 2.63
+	Winzip
+		Compressed: 12,876 bytes
+		Ratio: 4.09
+
+
+code.txt - Original = 69,516 bytes
+	LZW.java
+		Compressed: 30,852 bytes
+		Ratio: 2.25
+	MyLZW.java (Do Nothing)
+		Compressed: 24,293 bytes
+		Ratio: 2.86
+	MyLZW.java (Reset)
+		Compressed: 24,293 bytes
+		Ratio: 2.86
+	MyLZW.java (Monitor)
+		Compressed: 24,293 bytes
+		Ratio: 2.86
+	Winzip
+		Compressed: 14,852 bytes
+		Ratio: 4.68
+
+
+edit.exe - Original = 236,328 bytes
+	LZW.java
+		Compressed: 250,742 bytes
+		Ratio: .943
+	MyLZW.java (Do Nothing)
+		Compressed: 156,413 bytes
+		Ratio: 1.51
+	MyLZW.java (Reset)
+		Compressed: 156,413 bytes
+		Ratio: 1.51
+	MyLZW.java (Monitor)
+		Compressed: 156,413 bytes
+		Ratio: 1.51
+	Winzip
+		Compressed: 126,899 bytes
+		Ratio: 1.86
+
+
+frosty.jpg - Original = 126,748 bytes
+	LZW.java
+		Compressed: 177,453 bytes
+		Ratio: .714
+	MyLZW.java (Do Nothing)
+		Compressed: 163,795 bytes
+		Ratio: .774
+	MyLZW.java (Reset)
+		Compressed: 163,795 bytes
+		Ratio: .774
+	MyLZW.java (Monitor)
+		Compressed: 163,795 bytes
+		Ratio: .774
+	Winzip
+		Compressed: 126,597 bytes
+		Ratio: 1.00
+
+
+gone_fishing.bmp - Original = 17,336 bytes
+	LZW.java
+		Compressed: 9,278 bytes
+		Ratio: 1.87
+	MyLZW.java (Do Nothing)
+		Compressed: 8,965 bytes
+		Ratio: 1.93
+	MyLZW.java (Reset)
+		Compressed: 8,965 bytes
+		Ratio: 1.93
+	MyLZW.java (Monitor)
+		Compressed: 8,965 bytes
+		Ratio: 1.93
+	Winzip
+		Compressed: 8,616 bytes
+		Ratio: 2.01
+
+
+large.txt - Original = 1,202,933 bytes
+	LZW.java
+		Compressed: 599,390 bytes
+		Ratio: 2.01
+	MyLZW.java (Do Nothing)
+		Compressed: 497,991 bytes
+		Ratio: 2.42
+	MyLZW.java (Reset)
+		Compressed: 497,991 bytes
+		Ratio: 2.42
+	MyLZW.java (Monitor)
+		Compressed: 497,991 bytes
+		Ratio: 2.42
+	Winzip
+		Compressed: 489,924 bytes
+		Ratio: 2.46
+
+
+Lego-big.gif - Original = 93,371 bytes
+	LZW.java
+		Compressed: 128,973 bytes
+		Ratio: .724
+	MyLZW.java (Do Nothing)
+		Compressed: 122,497 bytes
+		Ratio: .762
+	MyLZW.java (Reset)
+		Compressed: 122,497 bytes
+		Ratio: .762
+	MyLZW.java (Monitor)
+		Compressed: 122,497 bytes
+		Ratio: .762
+	Winzip
+		Compressed: 92,351 bytes
+		Ratio: 1.01
+
+
+medium.txt - Original = 25,407 bytes
+	LZW.java
+		Compressed: 13,197 bytes
+		Ratio: 1.93
+	MyLZW.java (Do Nothing)
+		Compressed: 12,533 bytes
+		Ratio: 2.03
+	MyLZW.java (Reset)
+		Compressed: 12,533 bytes
+		Ratio: 2.03
+	MyLZW.java (Monitor)
+		Compressed: 12,533 bytes
+		Ratio: 2.03
+	Winzip
+		Compressed: 10,774 bytes
+		Ratio: 2.36
+
+
+texts.tar - Original = 1,382,400 bytes
+	LZW.java
+		Compressed: 1,012,179 bytes
+		Ratio: 1.37
+	MyLZW.java (Do Nothing)
+		Compressed: 597,847 bytes
+		Ratio: 2.31
+	MyLZW.java (Reset)
+		Compressed: 597,847 bytes
+		Ratio: 2.31
+	MyLZW.java (Monitor)
+		Compressed: 597,847 bytes
+		Ratio: 2.31
+	Winzip
+		Compressed: 534,380 bytes
+		Ratio: 2.59
+
+
+wacky.bmp - Original = 921,654 bytes
+	LZW.java
+		Compressed: 4,302 bytes
+		Ratio: 214.24
+	MyLZW.java (Do Nothing)
+		Compressed: 3,952 bytes
+		Ratio: 233.2
+	MyLZW.java (Reset)
+		Compressed:
+		Ratio: 233.2
+	MyLZW.java (Monitor)
+		Compressed: 3,952 bytes
+		Ratio: 233.2
+	Winzip
+		Compressed: 2,845 bytes
+		Ratio: 323.96
+
+
+winnt256.bmp - Original = 157,044 bytes
+	LZW.java
+		Compressed: 159,050 bytes
+		Ratio: .987
+	MyLZW.java (Do Nothing)
+		Compressed: 62,935 bytes
+		Ratio: 2.5
+	MyLZW.java (Reset)
+		Compressed: 62,935 bytes
+		Ratio: 2.5
+	MyLZW.java (Monitor)
+		Compressed: 62,935 bytes
+		Ratio: 2.5
+	Winzip
+		Compressed: 49,285 bytes
+		Ratio: 3.19

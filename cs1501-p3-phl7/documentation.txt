@@ -1,0 +1,35 @@
+Overview:
+
+  I used code from MinPQ.java from the course website link (http://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/MinPQ.java.html) to implement my version of CarTracker.
+  I do this for a few simple reasons, namely for the reason that it is based on a maximum number of cars.
+
+Memory:
+
+  I initialized the PQs to be of size 100. With a max number of cars of 100, and the user having to enter the
+  information of a car one at a time, it is unlikely that 100 spaces would even be necessary, To dynamically
+  resize, we would need to double the size of the array and copy the contents of the original over. After a
+  while, this could cause a lot of wasted memory, since the array would only rarely be full. This being said,
+  I still implemented this code since memory waste would be minimal based on the work we are actually doing.
+
+Runtime:
+
+  To handle indirection, I used a hash map. The advantage of this is the constant runtime to find any given element
+  in the priority queue. The update car property can be done in constant time, and the heap property would be theta of log(n)
+  runtime, where n is the number of cars currently in the system. This would be the same runtime for the remove function.
+  After finding the car in constant time, we would just need to sink it or swim it. The sink and swim commands simply
+  traverse the tree's height, and thus has log(n) runtime. As a result, the insert function works very similarly to the
+  remove function in terms of runtime, since we can just insert a car to the last index of the array and swim it up to the
+  correct location. For remove, we can find the car to remove in constant time, switch it with the last index, and then
+  sink or swim it for a runtime of theta of log(n). The find function has various runtimes based on which type of find is used.
+  If we're just finding the car with the minimum mileage or price, then it will work in constant runtime since it will
+  just pull the first item from the list. Searching by make and model will make the runtime theta of n in the worst case.
+  I added a method in the MinPQ.java file to search in a level order for the car that matches the make and model, which allows
+  us to find the make and model specific car with the highest priority.
+
+
+Conclusion:
+
+  Overall, I used the implementation from the Princeton site to make my program because it gives a constant time to access a
+  given element. It is very useful for searching for the highest priority car (based on make/model), since I can search in level
+  order without storing any extra references. The memory tradeoff may have been more of a concern if we were dealing with very large
+  quantities of cars, but in this case, I thought it was worth it.

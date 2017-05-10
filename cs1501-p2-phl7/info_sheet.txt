@@ -1,0 +1,60 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Patrick Lyons
+
+Lecture section:  1240 (MW 3:00 - 4:15)
+
+Recitation day and time:  Friday at 2:00PM
+
+Assignment #:  Project 2
+
+Program due date:  February 26, 2017 @ Midnight
+
+Handed in date:  February 26, 2017
+
+Source code file name(s):
+MyLZW.java
+
+
+
+
+
+
+
+Other file name(s) (if relevant):
+info_sheet.txt
+results.txt
+Files stored in edu/*
+
+
+
+
+
+
+Does your program run without error?:
+The program compiles correctly and runs, however, the different
+modes do not seem to make much difference in compressed size
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+
+
+
+
+
+Additional comments to the grader:
+Though the ratios do not change, the time it takes to compress seems
+to take much shorter for r and m than for n modes.
+
+For whatever reason, I could not get LZW to compile. I kept getting
+"symbol not found" errors at compile time for the java files that were
+included in the package as a result, I downloaded the original MyLZW.java
+file (unaltered), and used that for my results.txt values.

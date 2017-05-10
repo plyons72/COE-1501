@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>P4 Instructions</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">CS/COE 1501 Project 4</h1>
+
+<h2 id="toc_1">Goal:</h2>
+
+<p>To gain a better understanding of graphs and graph algorithms through practical implementation.</p>
+
+<h2 id="toc_2">High-level description:</h2>
+
+<p>Your program will analyze a given graph representing a computer network according to several specified metrics.
+The vertices of these graphs will represent switches in the network, while the edges represent either fiber optic or copper cables run between the switches.
+Your program will operate entirely via a console interface menu (no GUI).</p>
+
+<h2 id="toc_3">Specifications:</h2>
+
+<ol>
+<li>Your program will accept a single command line argument that specifies the name of a file containing the description of a graph.  Two such files are provided, <code>network_data1.txt</code> and <code>network_data2.txt</code>.  The format of these files is as follows:
+
+<ul>
+<li>The first line contains a single int stating the number of vertices in the graph.  These vertices will be numbered <code>0</code> to <code>v-1</code>.</li>
+<li>Each subsequent line will describe a single edge in the graph, with each of the following data items listed separated by spaces.
+
+<ul>
+<li>First, two integers specify the endpoints of the edge.</li>
+<li>Next, a string describes the type of cable the edge represents (either &quot;optical&quot; or &quot;copper&quot;).</li>
+<li>Next, an integer states the bandwidth of the cable, in megabits per second.</li>
+<li>Finally, an integer states the length of the edge in meters</li>
+<li>As an example, the line <code>0 5 optical 10000 25</code> describes an edge between vertex 0 and vertex 5 that represents a 25 meter optical cable with bandwidth of 10 gigabits per second.</li>
+</ul></li>
+<li>Assume that all cables are full duplex and hence represent connections in both directions (e.g., in the example above, data can flow from vertex 0 to vertex 5 at 10 gigabits per second and from vertex 5 to vertex 0 at 10 gigabits per second simultaneously).</li>
+</ul></li>
+<li>You must internally represent the graph as an adjacency list.</li>
+<li><p>After loading the graph from the specified file, your program will present the user with a menu with the following options:</p>
+
+<ol>
+<li><p>Find the <strong>lowest latency path</strong> between any two points, and give the bandwidth available along that path.</p>
+
+<ol>
+<li> First, your program will prompt the user for the two vertices between which they wish to find the lowest latency path.</li>
+<li><p>Then, your program will output the sequence of vertices that comprise the lowest-latency path, in order from the first user-specified vertex to the second.</p>
+
+<p>You must find the path between these vertices that will require the least amount of time for a single data packet to travel.  For this project, assume that the time required to travel along a path through the graph is the sum of the times required to travel each link, and that the time to travel each link is equal to the length of the cable divided by the speed at which data can be sent (determined by the link type).</p>
+
+<ul>
+<li>Assume data can be sent along a copper cable at a speed of 230,000,000 meters per second.</li>
+<li>Assume data can be sent along a fiber optic cable at a speed of 200,000,000 meters per second.</li>
+</ul></li>
+<li><p>Finally, your program will output the bandwidth that is available along the resulting path (i.e., the minimum bandwidth of all the edges in the path).</p></li>
+</ol></li>
+<li><p>Determine whether or not the graph is <strong>copper-only connected</strong>, or connected when considering only copper links (i.e., ignore fiber optic cables).</p></li>
+<li><p>Find the <strong>maximum amount of data</strong> that can be transmitted from one vertex to another.</p>
+
+<ol>
+<li>First, your program will prompt the user for the two vertices between which they wish to find the bandwidth.</li>
+<li>Then, your program will output the maximum amount of data that can be transmitted from the first to second user-specified vertices.</li>
+</ol></li>
+<li><p>Find the <strong>minimum average latency spanning tree</strong> for the graph, the spanning tree with the lowest average latency per edge.</p></li>
+<li><p>Determine whether the graph would remain connected even if <strong>any two vertices fail</strong>.</p>
+
+<p><strong>Note:</strong> You are not prompting the user for two vertices that could fail, you need to determine whether there is <em>any pair</em> of vertices that, should they both fail, would cause the graph to become disconnected.</p></li>
+<li><p>Quit the program. </p></li>
+</ol></li>
+</ol>
+
+<h2 id="toc_4">Submission Guidelines:</h2>
+
+<ul>
+<li><strong>DO NOT</strong> upload any IDE package files.</li>
+<li>You must name the primary driver for your program <code>NetworkAnalysis.java</code>.</li>
+<li>You must be able to compile your program by running <code>javac NetworkAnalysis.java</code>.</li>
+<li>You must be able to run your program with <code>java NetworkAnalysis [data_filename]</code> (e.g., <code>java NetworkAnalysis network_data1.txt</code>).</li>
+<li>You must fill out <code>info_sheet.txt</code>.</li>
+<li>The project is due at 11:59 PM on Monday, April 3. Upload your progress to Box frequently, even far in advance of this deadline. <strong>No late assignments will be accepted.</strong> At the deadline, your Box folder will automatically be changed to read-only, and no more changes will be accepted. Whatever is present in your Box folder at that time will be considered your submission for this assignment—no other submissions will be considered.</li>
+</ul>
+
+<h2 id="toc_5">Additional Notes and Hints:</h2>
+
+<ul>
+<li>Code for some of the algorithms needed in this assignment has been provided by the authors of your textbook. Use of this code will require extensive adaptations to account for the two weights of each edge in the graph.</li>
+<li>The assumed calculation of network latency used here is a drastic simplification for this project.  Interested students are encouraged to investigate a more detailed study of computer networks independently (recommended reading:  <em>Computer Networks: A Systems Approach</em> by Peterson and Davie).</li>
+</ul>
+
+<h2 id="toc_6">Grading Rubric</h2>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Points</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Menu interface is user-friendly</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Graph is properly read and represented</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Query</th>
+<th>Points</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Lowest latency path</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Copper-only connectivity</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Maximum data flow</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Minimum average latency spanning tree</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Surviving 2 vertex failures</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Other</th>
+<th>Points</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Assignment info sheet/submission</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body>
+
+</html>

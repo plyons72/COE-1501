@@ -1,0 +1,54 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  Patrick Lyons
+
+Lecture section:  1240
+
+Recitation day and time: Friday @ 2:00PM
+
+Assignment #:  Project 4
+
+Program due date:  Tuesday March 4th
+
+Handed in date:  Tuesday March 4th
+
+Source code file name(s):
+  NetworkAnalysis.java
+  Edge.java
+  Bag.java
+  Graph.java
+  PrimMST.java
+  Stack.java
+  IndexMinPQ.java
+  DijkstraSP.java
+  BFS.java
+
+Other file name(s) (if relevant):
+  info_sheet.txt
+
+Does your program run without error?:
+  No
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+  Working:
+    Adjacency List Stored
+    Menu Works
+    Lowest latency
+    Max transferrable data
+    Minimum Avg-Latency Spanning Tree
+
+  Not Working:
+    The removal function
+    The copper connected check
+
+
+Additional comments to the grader:
+  Edge, Graph, PrimMST, IndexMinPQ, DijkstraSP, BFS, Stack, Bag, and Edge .java
+  files were altered from the given book code and implemented in my code.
